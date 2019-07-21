@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+
+<body>
+   
+   
+   
+   
+
+<div class="modal" data-modal="1">
+   <!--   Svg иконка для закрытия окна  -->
+   <svg class="modal__cross js-modal-close" xmlns="http://www.w3.org/2000/svg"               viewBox="0 0 24 24"><path d="M23.954 21.03l-9.184-9.095 9.092-9.174-2.832-2.807-9.09 9.179-9.176-9.088-2.81 2.81 9.186 9.105-9.095 9.184 2.81 2.81 9.112-9.192 9.18 9.1z"/></svg>
+<!--   <p class="modal__title"></p>-->
+<input type="text">
+<button class="addButton">Add</button>
+</div>
+
+<!-- Подложка под модальным окном -->
+<div class="overlay js-overlay-modal"></div>
+    <div class="wraper">
+        <div class="header">
+           <div class="logo">
+                <h1>Casino</h1>
+           </div>
+           <div class="user">
+               <p>Hi, {userName},</p>
+               <p>Your balance is :</p>
+               <p class="userBalance">{userBalance}</p>
+               <button>
+                   <a href="#" class="js-open-modal" data-modal="1">Balance</a>
+               </button>
+               
+           </div>
+        </div>
+        <div class="casino">
+            <div class="machineHeader">
+                <p class="machineName">{machineName}</p>
+                <p>{maxBet}</p>
+            </div>
+            <div class="machineContent">
+                <div class="playInterface">
+                    <div class="inputWrap">
+                        <p>Enter your bet</p>
+                        <input type="number" class="casinoInput">
+                        <div class="buttons">
+                            <button class="takeButton">Take</button>
+                            <div class="btnWrap">
+                                <button class="casinoButton">Play</button>
+                            </div>
+                        </div>
+
+                    </div>
+                    <div class="machineMoney">
+                        <p>Game Machine Money</p>
+                        <p class="money"></p>
+                    </div>
+
+                    <div class="result">
+                        <p>Congratulations, you won:</p>
+                        <p class="resultNumber">0</p>
+                    </div>
+                    
+
+                </div>
+                <div class="playNumbers">
+
+                </div>
+            </div>
+
+
+        </div>
+    </div>
+
+
+    <script src="my.js"></script>
+    <script src="GameMachine.js"></script>
+</body></html>
