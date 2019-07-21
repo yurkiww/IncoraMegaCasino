@@ -1,8 +1,8 @@
-/* Стили для подложки */
+
 
 .overlay {
    
-   /* Скрываем подложку  */
+
    opacity: 0;
    visibility: hidden;
    
@@ -17,27 +17,27 @@
 }
 
 
-/* Стили для модальных окон */
+
 
 .modal {
    
-   /* Скрываем окна  */
+
    opacity: 0;
    visibility: hidden;
    
    
-   /*  Установаем ширину окна  */
+
    width: 100%;
    max-width: 500px;
    
-   /*  Центрируем и задаем z-index */
+
    position: fixed;
    top: 50%;
    left: 50%;
    transform: translate(-50%, -50%);
-   z-index: 30; /* Должен быть выше чем у подложки*/
+
    
-   /*  Побочные стили   */
+
    box-shadow: 0 3px 10px -.5px rgba(0, 0, 0, .2); 
    text-align: center;
    padding: 30px;
@@ -47,7 +47,7 @@
 }
 
 
-/* Стили для активных классов подложки и окна */
+
 
 .modal.active,
 .overlay.active{
@@ -56,7 +56,7 @@
 }
 
 
-/* Стили для кнопки закрытия */
+
 
 .modal__cross {
    width: 15px;
@@ -69,7 +69,6 @@
 }
 
 
-/* Стили для кнопок. Мы ведь порядочные разработчики, негоже простые ссылки оставлять */
 
 .increaseBalance{
    padding: 20px;
@@ -120,7 +119,7 @@ input {
     font-size: 2em;
 }
 button{
-/*    border-radius: 10%;*/
+
 }
 
 .machineHeader {
@@ -166,7 +165,7 @@ button{
 }
 
 .casino {
-    /*    min-height: 50vh;*/
+
     display: flex;
     margin: auto;
     border: 7px solid #2538a2;
