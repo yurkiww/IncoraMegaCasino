@@ -1,0 +1,17 @@
+<div class="cart">
+  <div class="cart-product">
+    <h3>My Shopping Bag ({{productItems.length}} items) </h3>
+    <h3>Total: $ {{sum.toFixed(2)}}</h3>
+  </div>
+  <div class="cart-product__list">
+    <div *ngFor="let product of productItems">
+      <app-cart-product-item [item]="product" (OnChanged)="receiveSum($event)"></app-cart-product-item>
+    </div>
+  </div>
+
+  <div class="cart-price-details">
+    <div *ngFor="let prices of cartPrices">
+      <app-cart-price-details [price]="prices" [total]="sum"></app-cart-price-details>
+    </div>
+  </div>
+</div>

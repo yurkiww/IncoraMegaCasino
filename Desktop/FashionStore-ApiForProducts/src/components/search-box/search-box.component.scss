@@ -1,0 +1,48 @@
+@import './src/styles/colors/colors.scss';
+
+.header__search-box {
+
+
+  .search-box__btn {
+    position: absolute;
+    padding: 0;
+    margin: 0;
+    outline: none;
+    border: none;
+    border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px;
+    background: url(src\assets\header\search-icon.png) no-repeat;
+    background-size: 50% 50%;
+    background-position: center;
+    background-color: $search-box-bc;
+    cursor: pointer;
+    height: 52px;
+    width: 52px;
+    transition-duration: 1s;
+  }
+
+  .search-box__btn:hover {
+    background-color: $grey;
+  }
+
+  .search-box__btn:active {
+    transform: translateY(20px);
+  }
+
+  input {
+    display: inline-block;
+    box-sizing: border-box;
+    border: none;
+    outline: none;
+    border-radius: 5px;
+    padding: 15px 10px 15px 70px;
+    background-size: auto 90%;
+    background-color: $search-box-bc;
+    font-size: 15px;
+  }
+
+  input[type="text"] {
+    width: 500px;
+  }
+
+}

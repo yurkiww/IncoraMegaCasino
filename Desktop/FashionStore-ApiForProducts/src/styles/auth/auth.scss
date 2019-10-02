@@ -1,0 +1,113 @@
+@import './src/styles/colors/colors.scss';
+
+@mixin main {
+  * {
+    margin: 0;
+    box-sizing: border-box;
+  }
+}
+
+@mixin page {
+  display: flex;
+
+  &_picture {
+    width: 60vw;
+    height: 100vh;
+    background-size: 60vw 100vh;
+    // box-shadow: 0 0 30px rgba(0, 0, 0, 0.5);
+    // border-radius: 0 25px 25px 0;
+  }
+
+  &_block {
+    width: 40vw;
+    height: 100vh;
+    // padding: 10vh 5vw;
+
+
+    &_form {
+      width: 30vw;
+      height: 60vh;
+
+      input {
+        width: 100%;
+        margin-bottom: 10px;
+        height: 70px;
+      }
+
+      p {
+        display: block;
+      }
+
+      &__item {
+        margin-bottom: 1rem;
+
+        &-control {
+          display: block;
+          width: 100%;
+          height: calc(1.5em + .75rem + 2px);
+          padding: .375rem .75rem;
+          font-size: 1rem;
+          font-weight: 400;
+          line-height: 1.5;
+          color: $auth_checkbox_color;
+          background-color: $white;
+          background-clip: padding-box;
+          border: $auth_checkbox_border;
+          border-radius: .25rem;
+          transition: border-color .15s ease-in-out, box-shadow .15s ease-in-out;
+        }
+      }
+
+      &__button {
+        color: $white;
+        background-color: $auth_button_color;
+        height: 50px;
+        width: 100%;
+        display: inline-block;
+        font-weight: 400;
+        text-align: center;
+        vertical-align: middle;
+        -webkit-user-select: none;
+        -moz-user-select: none;
+        -ms-user-select: none;
+        user-select: none;
+        border: 1px solid $auth_button_color;
+        padding: .375rem .75rem;
+        font-size: 1rem;
+        line-height: 1.5;
+        border-radius: .25rem;
+        transition: color .15s ease-in-out, background-color .15s ease-in-out, border-color .15s ease-in-out, box-shadow .15s ease-in-out;
+
+        &:hover {
+          cursor: pointer;
+        }
+
+        &:disabled {
+          opacity: 0.5;
+        }
+
+      }
+    }
+  }
+}
+
+@mixin media {
+  &_picture {
+    display: none;
+  }
+
+  &_block {
+    width: 100vw;
+    height: 100vh;
+    padding: 10vh 2vw;
+
+    &_form {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      width: 40vw;
+      height: 60vh;
+    }
+  }
+}

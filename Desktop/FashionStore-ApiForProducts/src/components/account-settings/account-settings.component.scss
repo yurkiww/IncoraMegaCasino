@@ -1,0 +1,170 @@
+@import "./src/styles/colors/colors.scss";
+
+.content {
+  padding: 4%;
+  display: flex;
+  flex-direction: column;
+  font-family: sans-serif;
+  color: $account-settings_content;
+  height: 84vh;
+
+  justify-content: center;
+  -webkit-box-shadow: 11px 14px 293px -147px rgba(0, 0, 0, 0.75);
+  -moz-box-shadow: 11px 14px 293px -147px rgba(0, 0, 0, 0.75);
+  box-shadow: 11px 14px 293px -147px rgba(0, 0, 0, 0.75);
+
+  .title {
+    font-weight: bold;
+    font-size: 15px;
+  }
+
+  .top-inputs,
+  .bottom-inputs {
+    justify-content: space-between;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+  }
+
+  .top-inputs {
+    padding: 4% 0 0 0;
+
+    .email {
+      width: 32%;
+
+      .email-wrap {
+        width: 100%;
+        display: flex;
+        margin: 9px 0 0 0;
+        border: $account-settings_border;
+        border-radius: 5px;
+
+        .email-input {
+          border: none;
+          margin: 0;
+        }
+
+        .email-red-border {
+          border-left: 7px solid $account-settings_red-border;
+          border-radius: 0px;
+        }
+
+        .email-svg {
+          border-right: $account-settings_border;
+          margin: 0;
+          width: 40px;
+          height: 40px;
+          background-color: $account-settings_email-svg;
+          border-radius: 4px 0 0 4px;
+
+          .svg {
+            width: 18px;
+            margin: 11px;
+          }
+        }
+      }
+    }
+  }
+
+  .first-n,
+  .last-n {
+    width: 32%;
+  }
+
+  .requiredForm {
+    height: 0px;
+    text-align: center;
+    font-size: 12px;
+    color: $account-settings_red-color;
+  }
+
+  .bottom-inputs {
+    padding: 2% 0 0 0;
+
+    .city {
+      width: 46%;
+    }
+
+    .state {
+      width: 25%;
+    }
+
+    .zip {
+      width: 25%;
+    }
+  }
+
+  .input {
+    font-size: 14px;
+    width: 100%;
+    height: 40px;
+    border-radius: 5px;
+    border: $account-settings_border;
+    outline: none;
+    margin: 9px 0 0 0;
+    padding: 3%;
+  }
+
+  .red-border {
+    border-left: 7px solid $account-settings_red-border;
+  }
+
+  .input ::placeholder {
+    font-size: 16px;
+  }
+
+  .btn-wrap {
+    display: flex;
+    justify-content: flex-end;
+    padding: 7% 0 0 0;
+
+    .button {
+      width: 75px;
+      height: 35px;
+      border-radius: 5px;
+      background-color: $account-settings_button-bc;
+      color: $account-settings_button-color;
+      font-size: 15px;
+      border: none;
+      cursor: pointer;
+      margin-right: 2px;
+
+      &:disabled {
+        opacity: 0.6;
+        cursor: default;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .content {
+    height: 100%;
+
+    .top-inputs {
+      display: flex;
+      flex-direction: column;
+      width: 100%;
+
+      .first-n,
+      .last-n,
+      .email {
+        width: 100%;
+        margin: 0 0 10px 0;
+      }
+    }
+
+    .bottom-inputs {
+      display: flex;
+      flex-direction: column;
+      width: 100%;
+
+      .city,
+      .state,
+      .zip {
+        width: 100%;
+        margin: 0 0 10px 0;
+      }
+    }
+  }
+}

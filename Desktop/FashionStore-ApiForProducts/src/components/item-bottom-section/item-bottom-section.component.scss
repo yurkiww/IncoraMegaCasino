@@ -1,0 +1,101 @@
+.bottom-section-show {
+  margin: 10px;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+
+  &__product-information {
+    margin-left: 50px;
+    flex: 2;
+  }
+
+  &__brand-information {
+    margin-left: 50px;
+    flex: 2;
+  }
+
+  &__cut-and-style {
+    margin-left: 200px;
+    flex: 2;
+  }
+
+  &__display-info {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+  }
+
+  h3 {
+    text-transform: uppercase;
+  }
+
+  button {
+    margin-top: 80px;
+    font-weight: bold;
+    cursor: pointer;
+    outline: none;
+    text-transform: uppercase;
+    background: none;
+    border: none;
+    padding: 15px 32px;
+    border: 2px solid black;
+    transition-duration: 0.6s;
+  }
+
+  button:hover {
+    background-color: silver;
+  }
+}
+
+.bottom-section-hide {
+  background: -webkit-linear-gradient(black, #dbdbdb 50%);
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  margin: 10px;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+
+  &__product-information {
+    margin-left: 50px;
+    flex: 2;
+  }
+
+  &__brand-information {
+    margin-left: 50px;
+    flex: 2;
+  }
+
+  &__cut-and-style {
+    margin-left: 200px;
+    flex: 2;
+  }
+
+  &__display-info {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+  }
+
+  h3 {
+    text-transform: uppercase;
+  }
+
+  button {
+    margin-top: 80px;
+    font-weight: bold;
+    cursor: pointer;
+    outline: none;
+    text-transform: uppercase;
+    background: none;
+    border: none;
+    padding: 15px 32px;
+    border: 2px solid black;
+    transition-duration: 0.6s;
+    -webkit-text-fill-color: black;
+  }
+
+  button:hover {
+    background-color: silver;
+  }
+}

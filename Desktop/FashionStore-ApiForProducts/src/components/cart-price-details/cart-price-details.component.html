@@ -1,0 +1,33 @@
+<div class="price-details">
+  <h3 class="title">price details</h3>
+
+  <div class="bag-total">
+    <p>Bag Total</p>
+    <p>{{total.toFixed(2)}}</p>
+  </div>
+
+  <div class="bag-discount">
+    <p>Bag Discount</p>
+    <p [ngStyle]="{'color':'rgb(150,230,215)'}">{{price.bagDiscount}}</p>
+  </div>
+
+  <div class="order-total">
+    <p>Order Total</p>
+    <p>{{price.orderTotal}}</p>
+  </div>
+
+  <div class="delivery-charges">
+    <p>Delivery Charges</p>
+    <p [ngStyle]="{'color':'rgb(150,230,215)'}">{{price.delivery}}</p>
+  </div>
+
+  <div class="total">
+    <h3>Total</h3>
+    <p>{{total.toFixed(2)}}</p>
+  </div>
+
+  <button (click)="openModal()">Place Order</button>
+
+  <app-modal-place-order [hidden]='!visible'></app-modal-place-order>
+
+</div>

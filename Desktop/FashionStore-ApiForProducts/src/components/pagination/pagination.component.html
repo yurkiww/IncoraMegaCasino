@@ -1,0 +1,15 @@
+<div class="pagination">
+  <button class="pagination__button" [disabled]="!canPrev" (click)="onPrev()">Previous</button>
+  <div class="pagination__numbers_wrap">
+    <div class="pagination__numbers" *ngFor="let number of numbers;let f = first;let i = index"
+      (click)="select(number)">
+      <p class=" pagination__numbers__item" [ngClass]="{active: isActive(number)}">
+        {{number}}
+      </p>
+
+    </div>
+
+  </div>
+  <button class="pagination__button" [disabled]="!canNext" (click)="onNext()">Next</button>
+</div>
+<!-- {{min}} - {{max}} vs {{total}} -->

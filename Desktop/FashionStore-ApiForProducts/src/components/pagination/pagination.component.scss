@@ -1,0 +1,46 @@
+.pagination {
+  padding: 26px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  &__numbers_wrap {
+    display: flex;
+    margin: 0 20px 0 20px;
+  }
+
+  &__numbers {
+    display: flex;
+    color: #2a2a3f;
+
+    &__item {
+      width: 20px;
+      text-align: center;
+      margin: 0 10px 0 10px;
+
+      &:hover {
+        color: white;
+        background-color: #2a2a3f;
+        border-radius: 2px;
+        cursor: pointer;
+      }
+    }
+  }
+
+  &__button {
+    width: 80px;
+    height: 35px;
+    font-size: 14px;
+    color: #2a2a3f;
+    border: 1px solid #d4d5d9;
+    border-radius: 2px;
+    cursor: pointer;
+  }
+
+  .active {
+    color: white;
+    background-color: #2a2a3f;
+    border-radius: 2px;
+    cursor: pointer;
+  }
+}

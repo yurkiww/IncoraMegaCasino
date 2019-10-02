@@ -1,0 +1,74 @@
+@import "./src/styles/colors/colors.scss";
+
+.item {
+  width: 250px;
+  display: flex;
+  flex-direction: column;
+  font-size: 13px;
+  padding: 5px;
+  margin-right: 5px;
+  border: $product-item_border;
+  transition: 0.5s;
+
+  &_hover {
+    display: none;
+  }
+
+  &:hover {
+    box-shadow: $product-item-hover;
+    cursor: pointer;
+
+    .item_unhover {
+      display: none;
+    }
+
+    .item_hover {
+      display: block;
+    }
+  }
+
+  &__img {
+    height: 250px;
+  }
+
+  &__price {
+    padding: 0px 10px;
+
+    s {
+      color: $grey;
+    }
+
+    small {
+      color: $product-item_button-bc;
+    }
+  }
+
+  &_information {
+    padding: 10px;
+
+    &__name {
+      font-weight: 900;
+      padding-top: 10px;
+    }
+
+    &__button {
+      background-color: $product-item_button-bc;
+      border: none;
+      color: $white;
+      padding: 4px 16px;
+      text-align: center;
+      font-size: 12px;
+      margin: 2px 0px;
+      opacity: 0.6;
+      transition: 0.3s;
+      display: inline-block;
+      text-decoration: none;
+      cursor: pointer;
+      border-radius: 5px;
+
+      &:hover {
+        opacity: 1;
+      }
+    }
+  }
+}

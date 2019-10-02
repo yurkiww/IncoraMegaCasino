@@ -1,0 +1,22 @@
+h3 {
+  color: rgb(83, 87, 101);
+}
+
+.cart-product {
+  width: 65%;
+  margin: 20px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.cart {
+  display: flex;
+  flex-wrap: wrap;
+  //flex-direction: column;
+}
+
+.cart-price-details {
+  margin-left: 40px;
+  padding-left: 40px;
+  border-left: 1px solid grey;
+}

@@ -1,0 +1,73 @@
+<form>
+  <div id="modal" class="modal">
+    <div class="modal-content">
+
+      <div class="title">
+        <h3>Enter recipient address</h3>
+        <button type="button" (click)="closeModal()">x</button>
+      </div>
+
+      <div class="form__initials">
+
+        <div class="first-name">
+          <label for="firstName">First Name</label>
+          <input type="text" required id="firstName" name="firstName">
+        </div>
+
+        <div class="last-name">
+          <label for="lastName">Last Name</label>
+          <input type="text" required id="lastName" name="lastName">
+        </div>
+
+      </div>
+
+
+      <div class="form__email-phone">
+
+        <div class="email">
+          <label for="email">Email</label>
+          <input type="email" required id="email" name="email">
+        </div>
+
+        <div class="phone">
+          <label for="phone">Phone</label>
+          <input type="tel" required id="phone" name="phone">
+        </div>
+
+      </div>
+
+      <div class="form__address">
+        <label for="address1">Address 1</label>
+        <input type="text" required id="address1" name="address1">
+
+        <label for="address2">Address 2</label>
+        <input type="text" required id="address2" name="address2">
+      </div>
+
+      <div class="place">
+
+        <div class="city">
+          <label for="city">City</label>
+          <input type="text" required id="city" name="city">
+        </div>
+
+        <div class="state">
+          <label for="state">State</label>
+          <input type="text" required id="state" name="state">
+        </div>
+
+        <div class="zip">
+          <label for="zip">Zip</label>
+          <input type="text" required id="zip" name="zip">
+        </div>
+
+      </div>
+
+      <div class="buttons">
+        <button class="close" (click)="closeModal()">Close</button>
+        <button class="confirm">Confirm Order</button>
+      </div>
+
+    </div>
+  </div>
+</form>

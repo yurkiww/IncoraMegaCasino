@@ -1,0 +1,30 @@
+<div class="login">
+  <img src="assets/auth/login.jpg" class="login_picture">
+  <div class="login_block">
+    <form [formGroup]="loginForm" (submit)="loginUser()" class="login_block_form">
+      <h2>Log in</h2>
+      <p><small>If you don't have an account yet, please <a routerLink='/register'><u>register</u></a> first.</small>
+      </p>
+      <br>
+      <div class="login_block_form__item">
+        <input formControlName="email" type="email" class="login_block_form__item-control" placeholder="Enter email">
+      </div>
+      <div class="login_block_form__item">
+        <div class="show_password">
+          <input formControlName="password" [type]="inputTypePassword" class="login_block_form__item-control"
+            placeholder="Password" id="showPassword">
+          <div (mousedown)="showPassword()" (mouseup)="hidePassword()"><img src="assets/auth/hidden.svg" alt=""></div>
+        </div>
+        <p><small><a><u>I forgot my password</u></a></small></p>
+      </div>
+      <div class="custom-control custom-checkbox">
+        <input formControlName="remember" type="checkbox" class="custom-control-input" id="customCheck1">
+        <label class="custom-control-label" for="customCheck1">Remember
+          me</label>
+      </div>
+      <br>
+      <br>
+      <button class="login_block_form__button" [disabled]="loginForm.invalid">Log in</button>
+    </form>
+  </div>
+</div>

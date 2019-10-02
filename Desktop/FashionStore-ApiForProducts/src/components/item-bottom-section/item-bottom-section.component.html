@@ -1,0 +1,67 @@
+<div *ngIf="visible; else elseBlock" class="bottom-section-show">
+  <div class="bottom-section-show__product-information">
+    <h3>Product information</h3>
+    <p>{{bottomSectionInfo.color}} color</p>
+    <p>Closure: {{bottomSectionInfo.closure}}</p>
+    <p>Fittings: {{bottomSectionInfo.fittings}}</p>
+    <p>Decor: {{bottomSectionInfo.decor}}</p>
+    <p>Pockets: {{bottomSectionInfo.pockets}}</p>
+    <p>Size on model (height 189cm): {{bottomSectionInfo.modelSize}}</p>
+    <p>Dimension of the model: {{bottomSectionInfo.modelDimension}}</p>
+  </div>
+  <div class="bottom-section-show__brand-information">
+    <h3>Brand Information</h3>
+    <p>{{bottomSectionInfo.brandInformation}}</p>
+  </div>
+  <div class="bottom-section-show__cut-and-style">
+    <h3>Cut and Style</h3>
+
+    <ul>
+      <li>Leg Length: 102cm</li>
+      <li>Step Length: 77cm</li>
+      <li>Pants & Jeans Width: Straight</li>
+      <li>mid landing</li>
+      <li>Jeans elasticity: stretch</li>
+      <li>Girth: 86cm</li>
+      <li>Hips: 108cm</li>
+    </ul>
+    <br>
+    <h3>Composition</h3>
+    <p>99% cotton</p>
+    <p>1% elastane</p>
+
+  </div>
+  <div class="bottom-section-show__display-info">
+    <button (click)="hide()">Hide information</button>
+  </div>
+</div>
+
+<ng-template #elseBlock>
+  <div class="bottom-section-hide">
+    <div class="bottom-section-hide__product-information">
+      <h3>Product information</h3>
+      <p>{{bottomSectionInfo.color}} color</p>
+      <p>Closure: {{bottomSectionInfo.closure}}</p>
+      <p>Fittings: {{bottomSectionInfo.fittings}}</p>
+      <p>Decor: {{bottomSectionInfo.decor}}</p>
+      <p>Pockets: {{bottomSectionInfo.pockets}}</p>
+    </div>
+    <div class="bottom-section-hide__brand-information">
+      <h3>Brand Information</h3>
+      <p>{{bottomSectionInfo.brandInformationShort}}</p>
+    </div>
+    <div class="bottom-section-hide__cut-and-style">
+      <h3>Cut and Style</h3>
+      <ul>
+        <li>Leg Length: 102cm</li>
+        <li>Step Length: 77cm</li>
+        <li>Pants & Jeans Width: Straight</li>
+        <li>mid landing</li>
+        <li>Jeans elasticity: stretch</li>
+      </ul>
+    </div>
+    <div class="bottom-section-hide__display-info">
+      <button (click)="show()">Show more info</button>
+    </div>
+  </div>
+</ng-template>

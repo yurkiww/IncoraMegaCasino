@@ -1,0 +1,185 @@
+.content {
+  display: flex;
+
+
+
+  .product-image {
+    width: 45%;
+
+    .image-wrap {
+
+      .img {
+        width: 100%;
+        height: 100%;
+      }
+    }
+  }
+
+  .product-info {
+    width: 50%;
+    margin: 20px 0 0 0;
+
+    .brand {
+      display: flex;
+      justify-content: space-between;
+
+      .brand-name {
+        font-size: 40px;
+      }
+
+      .brand-logo {
+        margin: 10px 0 0 0;
+        width: 75px;
+
+        .levis-image {
+          width: 100%;
+          align-self: flex-end;
+        }
+      }
+    }
+
+    .item-description {
+      font-size: 22px;
+    }
+
+    .pricing {
+      display: flex;
+      justify-content: space-between;
+      margin: 30px 0 0 0;
+
+      .price {
+        color: #DC9E76;
+        font-weight: bold;
+        font-size: 35px;
+      }
+
+      .free-shipping {
+        height: 20px;
+        margin: 10px 0 0 0;
+        border-bottom: 1px dotted #333333;
+        color: #333333;
+      }
+    }
+
+    .sizing {
+      border-top: 1px solid #EDEDED;
+
+      margin: 10px 0 0 0;
+
+      .size-table {
+        margin: 20px 0 0 0;
+
+        .size-table-link {
+
+          color: #222222;
+        }
+
+      }
+
+
+      .button-block {
+        display: flex;
+        padding: 25px 0 25px 0;
+
+        .select-size {
+          width: 40%;
+          margin: 0 10px 0 0;
+
+          &-slc {
+            width: 100%;
+            height: 50px;
+            border: 1px solid black;
+            border-radius: 0;
+
+            font-size: 14px;
+
+
+
+          }
+        }
+
+        .add-to-cart {
+          width: 45%;
+
+          &-btn {
+            width: 100%;
+            height: 50px;
+            color: white;
+            background-color: #DC9E76;
+            font-weight: bold;
+            font-size: 14px;
+          }
+        }
+      }
+    }
+
+    .shipping {
+      display: flex;
+      border-top: 1px solid #EDEDED;
+      border-bottom: 1px solid #EDEDED;
+
+
+      .shipping-info {
+        display: flex;
+        border-right: 1px solid #EDEDED;
+        padding: 10px 5px 10px 0;
+
+        .shipping-info-image {}
+
+        .shipping-info-text {
+          margin: 15px 0 0 10px;
+          font-size: 13px;
+        }
+      }
+
+      .exchange-info {
+        display: flex;
+        padding: 10px 0 10px 5px;
+
+        .exchange-info-image {}
+
+        .exchange-info-text {
+          margin: 15px 0 0 10px;
+          font-size: 13px;
+        }
+      }
+    }
+
+    .official-stores-info {
+      padding: 30px 0 30px 0;
+      border-bottom: 1px solid #EDEDED;
+
+
+
+      .official-stores-info-tittle {
+        text-align: center;
+        color: #DC9E76;
+      }
+
+      .official-stores-info-description {
+        text-align: center;
+
+      }
+    }
+
+
+  }
+}
+
+@media screen and (max-width:768px) {
+  .content {
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    .product-image {
+      width: 90%;
+    }
+
+    .product-info {
+      width: 90%;
+    }
+  }
+}

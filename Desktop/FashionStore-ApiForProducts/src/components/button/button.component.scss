@@ -1,0 +1,22 @@
+.button {
+  &__add-item {
+    font-size: 16px;
+    padding: 10px;
+    margin: 2px;
+    border: 2px solid rgb(166, 208, 168);
+    background: white;
+    transition-duration: 1s;
+    cursor: pointer;
+    text-align: center;
+    border-radius: 10px;
+    outline: none;
+  }
+
+  :hover {
+    background: rgb(166, 208, 168);
+  }
+
+  :active {
+    transform: translateY(20px);
+  }
+}

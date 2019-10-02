@@ -1,0 +1,33 @@
+@import "./src/styles/colors/colors.scss";
+
+.product__list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  padding: 10px 10px;
+}
+
+// .product__add-item-btn {
+//   position: absolute;
+// }
+
+hr {
+  margin-top: 30px;
+}
+
+.product__search {
+  margin-bottom: 40px;
+  padding: 0px 10px;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+
+  .searchBox {
+    margin-right: 20%;
+  }
+
+}
+
+hr {
+  margin-top: 10px;
+}

@@ -1,0 +1,100 @@
+<div class="container">
+  <form class="container_form" [formGroup]="newItemForm">
+    <div class="container_form_head">
+      <h2>New Item</h2>
+      <button type="button" class="btn dark" routerLink="//products">
+        Back
+      </button>
+    </div>
+    <div class="container_form_upper">
+      <div class="container_form_right">
+        <div class="container_form__item">
+          Name:
+          <input formControlName="name" type="text" placeholder="Name" class="container_form__item-control" [ngClass]="{
+              'red-border': isFieldValid('name')
+            }" />
+        </div>
+        <div class="container_form__item">
+          Brand name:
+          <input formControlName="brandName" type="text" placeholder="Brand name" class="container_form__item-control"
+            [ngClass]="{
+              'red-border': isFieldValid('brandName')
+            }" />
+        </div>
+        <div class="container_form__item">
+          Price:
+          <input formControlName="price" type="number" placeholder="Price" class="container_form__item-control"
+            [ngClass]="{
+              'red-border': isFieldValid('price')
+            }" />
+        </div>
+        <div class="container_form__item">
+          Cloth:
+          <select formControlName="cloth" class="container_form__item-control" [ngClass]="{
+              'red-border': isFieldValid('cloth')
+            }">
+            <option value="cotton">Cotton</option>
+            <option value="wool">Wool</option>
+            <option value="silk">Silk</option>
+            <option value="synthetic">Synthetic</option>
+          </select>
+          <br />
+        </div>
+      </div>
+      <div class="container_form_left">
+        <div class="container_form__item">
+          Available sizes:
+          <select multiple formControlName="sizes" class="container_form__item-control" [ngClass]="{
+              'red-border': isFieldValid('sizes')
+            }" size="3">
+            <option value="XS">XS</option>
+            <option value="S">S</option>
+            <option value="M">M</option>
+            <option value="L">L</option>
+            <option value="XL">XL</option>
+          </select>
+        </div>
+        <div class="container_form__item">
+          Available colors:
+          <select multiple formControlName="colors" class="container_form__item-control" [ngClass]="{
+              'red-border': isFieldValid('colors')
+            }" size="2">
+            <option value="White">White</option>
+            <option value="Green">Green</option>
+            <option value="Yellow">Yellow</option>
+            <option value="Gray">Gray</option>
+          </select>
+        </div>
+        <div class="container_form__item">
+          Description:
+          <textarea formControlName="description" class="container_form__item-control" [ngClass]="{
+              'red-border': isFieldValid('description')
+            }"></textarea>
+        </div>
+      </div>
+    </div>
+    <div class="container_form_footer">
+      <div>
+        Please load images: <br />
+        <input formControlName="img" type="file" class="container_form__item-control" style="line-height: 0.5;"
+          value="Choose file" [ngClass]="{
+            'red-border': isFieldValid('img')
+          }" />
+      </div>
+      <div>
+        <p>OR</p>
+      </div>
+      <div>
+        Set link for picture
+        <input formControlName="img" type="text" class="container_form__item-control" [ngClass]="{
+            'red-border': isFieldValid('img')
+          }" />
+      </div>
+    </div>
+    <div style="display: flex; justify-content: flex-end">
+      <button (click)="addItem()" type="button" class="btn success" [disabled]="newItemForm.invalid">
+        Save
+      </button>
+    </div>
+  </form>
+</div>

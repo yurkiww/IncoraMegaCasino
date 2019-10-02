@@ -1,0 +1,17 @@
+<div class="item">
+  <img [src]="item.img" alt="" class="item__img" />
+  <div class="item_information">
+    <div class='item_unhover'>
+      <div class="item_information__name">{{ item.name }}</div>
+      <div class="item_information__description">{{ item.description }}</div>
+    </div>
+    <div class="item_hover">
+      <button class="item_information__button" (click)="addToCartHandler()">ADD TO BAG</button>
+      <div class="item_information__size">Sizes: {{ item.size }}</div>
+    </div>
+  </div>
+  <div class="item__price">
+    <b>Rs. {{ item.reducedPrice }} </b><s>Rs. {{ item.price }}</s>
+    <small> ({{ item.discount }}% OFF)</small>
+  </div>
+</div>

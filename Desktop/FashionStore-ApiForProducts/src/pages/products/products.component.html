@@ -1,0 +1,15 @@
+<div class="product__search">
+  <app-button class="product__add-item-btn" routerLink="//new-item"></app-button>
+  <app-search-box class="searchBox"></app-search-box>
+</div>
+
+<hr>
+<div class="product__list">
+
+  <div *ngFor="let product of products">
+    <app-product-item [routerLink]="['/products',product.id]" [item]="product" (addToCart)="addToCart($event)">
+    </app-product-item>
+  </div>
+</div>
+<app-pagination size="12" total="100" (pageChanged)="onPageChanged($event)"></app-pagination>
+<router-outlet></router-outlet>

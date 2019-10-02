@@ -1,0 +1,74 @@
+// main colors
+$grey-blue: rgb(31, 34, 43);
+$white: white;
+$grey: grey;
+$aliceblue: aliceblue;
+
+// account-settings
+
+$account-settings_content: #485057;
+$account-settings_red-border: #bd3939;
+$account-settings_email-svg: #e9ecef;
+$account-settings_red-color: #af3434;
+$account-settings_button-bc: #316bff;
+$account-settings_button-color: #ffff;
+$account-settings_border: 1px solid #bdbdbd;
+
+// modal
+
+$modal_header-bc: #494afd;
+$modal_header-color:aliceblue;
+$modal_hover-bc:#f8f9fa;
+$modal_hover-color:#6b7afc;
+
+// product-item
+$product-item_border:1px solid rgba(31, 34, 43, 0.2);
+$product-item-hover: 0 0 10px rgba(0, 0, 0, 0.5);
+$product-item_button-bc:#f4511e;
+
+// search-box
+$search-box-bc: #f5f5f6;
+
+// sidebar
+$sidebar_list_item-hover-border:2px solid rgb(33, 76, 207);
+$sidebar_list_item-hover-color:rgb(63, 68, 84);
+
+// auth
+$auth_button_color: #007bff;
+$auth_checkbox_color: #495057;
+$auth_checkbox_border:1px solid #ced4da;
+$auth_checkbox_border-before: #adb5bd solid 1px;
+
+// buttons
+@mixin dark {
+  color: #343a40;
+  border-color: #343a40;
+
+  &:hover {
+    color: #fff;
+    background-color: #343a40;
+    cursor: pointer;
+  }
+
+
+  &:focus {
+    outline: none;
+    box-shadow: 0 0 0 0.2rem rgba(52, 58, 64, .5)
+  }
+}
+
+@mixin success {
+  color: #28a745;
+  border-color: #28a745;
+
+  &:hover {
+    color: white;
+    background-color: #28a745;
+    cursor: pointer;
+  }
+
+  &:focus {
+    box-shadow: 0 0 0 0.2rem rgba(40, 167, 69, .5);
+    outline: none
+  }
+}

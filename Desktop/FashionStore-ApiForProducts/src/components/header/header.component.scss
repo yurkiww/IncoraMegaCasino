@@ -1,0 +1,42 @@
+.header {
+  margin: 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
+  padding-top: 0px;
+  padding-bottom: 0px;
+  height: 16vh;
+}
+
+
+.header__img {
+  width: 150px;
+  height: auto;
+}
+
+.header__user {
+  flex: 2;
+  text-align: end;
+  margin-right: 50px;
+}
+
+.header__user-img {
+  width: 60px;
+  height: auto;
+
+  &:hover {
+    cursor: pointer;
+  }
+}
+
+.modal {
+  position: absolute;
+  right: 5px;
+  top: 100px;
+}
+
+.search-box {
+  position: absolute;
+  left: 50%;
+}

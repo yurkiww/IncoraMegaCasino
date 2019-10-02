@@ -1,0 +1,29 @@
+<div class="sidebar">
+  <div class="sidebar_head">
+    <img [src]="sidebar.userImg" alt="" class="sidebar_head__photo">
+    <div class="sidebar_head_information">
+      <p class="sidebar_head_information__name">{{sidebar.userName}} {{sidebar.userLastName}}</p>
+      <p class="sidebar_head_information__status">{{sidebar.userStatus}}</p>
+    </div>
+  </div>
+  <div class="sidebar_list">
+    <a routerLink="">
+      <div class="sidebar_list_item">
+        <img src="assets/sidebar/speedometer.svg" alt="">
+        <p>Dashboard</p>
+      </div>
+    </a>
+    <a routerLink="//products">
+      <div class="sidebar_list_item">
+        <img src="assets/sidebar/shopping-cart.svg" alt="">
+        <p>My products</p>
+      </div>
+    </a>
+    <a routerLink="//cart">
+      <div class="sidebar_list_item">
+        <img src="assets/sidebar/shopping-cart.svg" alt="">
+        <p>Orders</p>
+      </div>
+    </a>
+  </div>
+</div>

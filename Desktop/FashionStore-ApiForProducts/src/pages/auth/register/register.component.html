@@ -1,0 +1,29 @@
+<div class="register">
+  <img src="/assets/auth/register.png" class="register_picture">
+  <div class="register_block">
+    <form class="register_block_form" [formGroup]="registerForm" (submit)="registerUser()">
+      <h2>Register</h2>
+      <p><small>Please enter your name and e-mail here for the registration.</small></p>
+      <div class="register_block_form__item">
+        <input formControlName="firstName" type="text" class="register_block_form__item-control"
+          placeholder="First name"> </div>
+      <div class="register_block_form__item">
+        <input formControlName="lastName" type="text" class="register_block_form__item-control" placeholder="Last name">
+      </div>
+      <div class="register_block_form__item">
+        <input formControlName="email" type="email" class="register_block_form__item-control" placeholder="E-Mail">
+      </div>
+      <div class="register_block_form__item">
+        <input formControlName="password" type="password" class="register_block_form__item-control"
+          placeholder="Your password">
+      </div>
+      <div class="register_block_form__item">
+        <input formControlName="passwordConfirm" type="password" class="register_block_form__item-control"
+          placeholder="Confirm password">
+      </div>
+      <br>
+      <br>
+      <button type="submit" class="register_block_form__button">Register</button>
+    </form>
+  </div>
+</div>
